@@ -1,6 +1,6 @@
 export default {
-   emprendedores: [],
-   selectedEmprendedor: null,
+   plandenegocio: [],
+   selectedPlanNegocio: null,
    error: false,
    errorMessage: ""
 }

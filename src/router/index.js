@@ -16,16 +16,16 @@ const routes = [
     name: 'Emprendedor',
     component: Emprendedor
   },
-  {
-    path: '/plandenegocio',
-    name: 'PlandeNegocio',
-    component: PlandeNegocio
-  }, 
-  {
-    path: '/sectorciiu',
-    name: 'sectorCiuu',
-    component: SectorCiuu
-  },
+  // {
+  //   path: '/plandenegocio',
+  //   name: 'PlandeNegocio',
+  //   component: PlandeNegocio
+  // }, 
+  // {
+  //   path: '/sectorciiu',
+  //   name: 'sectorCiuu',
+  //   component: SectorCiuu
+  // },
   {
     path: '/about',
     name: 'About',

@@ -14,7 +14,6 @@ export async function fetchEmprendedores({ commit }){
 
 export async function addEmprendedor({ commit, dispatch }, emprendedor){
     await Vue.axios.post('/api/emprendedor', {
-        //id: Date.now(),
         identidad:emprendedor.identidad,
         nombre:   emprendedor.nombre,
         apellidos:emprendedor.apellidos,
@@ -34,7 +33,6 @@ export async function addEmprendedor({ commit, dispatch }, emprendedor){
 
 export async function updateEmprendedor({ commit }, emprendedor){
     await Vue.axios.put(`/api/emprendedor/${ emprendedor.emprendedorId }`, {
-        //id: Date.now(),
         identidad:emprendedor.identidad,
         nombre:   emprendedor.nombre,
         apellidos:emprendedor.apellidos,
@@ -50,19 +48,6 @@ export async function updateEmprendedor({ commit }, emprendedor){
         console.log("Petición de updateEmprendedor resuelta");
     });
 }
-
-// export async function updateStatusTodo({ commit, dispatch }, todo){
-//     await Vue.axios.put(`/todos/${ todo.id }`, {
-//         id: todo.id,
-//         text: todo.text,
-//         done: ! todo.done
-//     }).catch( err => {
-//         commit('todosError', err.message);
-//     }).finally(() => {
-//         dispatch('fetchTodos');
-//         console.log("Petición de updateStatusTodo resuelta");
-//     });
-// }
 
 export async function deleteEmprendedor({ commit, dispatch }, emprendedor){
     await Vue.axios.delete(`/api/emprendedor/${ emprendedor.emprendedorId }`)
