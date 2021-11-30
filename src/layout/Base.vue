@@ -34,10 +34,38 @@
             <v-list-item-action>
               <v-icon>mdi-{{ icons[2] }}</v-icon>
             </v-list-item-action>
-             <v-list-item-content>
-              <v-list-item-title>Plan de Negocio</v-list-item-title>
+              <v-list-item-content>
+                <v-list-item-title>Plan de Negocio</v-list-item-title>
             </v-list-item-content>
-         </v-list-item>
+          </v-list-item>
+          
+          <v-list-item :to="{path: '/Usuarios'}">
+            <v-list-item-action>
+              <v-icon>mdi-{{ icons[3] }}</v-icon>
+            </v-list-item-action>
+              <v-list-item-content>
+                <v-list-item-title>Usuarios</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item :to="{path: '/Contacto'}">
+            <v-list-item-action>
+              <v-icon>mdi-{{ icons[4] }}</v-icon>
+            </v-list-item-action>
+              <v-list-item-content>
+                <v-list-item-title>Contáctanos</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item :to="{path: '/Ayuda'}">
+            <v-list-item-action>
+              <v-icon>mdi-{{ icons[5] }}</v-icon>
+            </v-list-item-action>
+              <v-list-item-content>
+                <v-list-item-title>Ayuda</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
 
         <!-- </v-list-item-group> -->
       </v-list>
@@ -53,11 +81,14 @@
               alt="Vuetify Logo"
               class="shrink mr-2"
               contain
-              src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+              src="../assets/logoicono.png"
               transition="scale-transition"
-              width="40"
+              width="60"
               :to="{path: '/'}"
-            />  
+            /> 
+            <h3 class="deep-purple accent-4 white--text" >
+              Mi Proyecto. Emprendedor te ayudamos a generar el documento del Plan de Negocios.
+            </h3>
           </v-list-item>
         
         </v-toolbar-title>
@@ -83,7 +114,7 @@
   export default {
     name: 'Base', // Nombre con el que se exporta el componente
     data: () => ({
-      icons: ['home','account-edit','book-account'],
+      icons: ['home','account-edit','book-account','contacts','phone','help-box'],
       drawer: false,
     }),
 };

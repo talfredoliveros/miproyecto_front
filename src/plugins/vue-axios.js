@@ -5,9 +5,11 @@ import VueAxios from 'vue-axios';
 import router from '../router'
 import store from '../store';
 
-const baseURL = 'http://localhost:3000';
+//const baseURL = 'http://localhost:8089';
+const baseURL = 'https://miproyecto-plandenegocio.herokuapp.com';
 axios.defaults.baseURL = baseURL;
 
+//https://miproyecto-plandenegocio.herokuapp.com/
 
 axios.interceptors.request.use(
     config => {

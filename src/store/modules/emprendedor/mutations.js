@@ -5,7 +5,6 @@ export function setemprendedores(state, emprendedor) {
 
 export function setemprendedor(state, emprendedor) {
    state.selecttedEmprendedor = emprendedor;
-   
 
 }
 
